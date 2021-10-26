@@ -1,16 +1,8 @@
- 
 from tkinter import * 
 from tkinter import messagebox
 
-
-
-
-
-
 import tkinter as tk
 import tkinter.ttk as ttk
-
-
 
 class NuevoProyectoApp:
     def __init__(self, master=None):
