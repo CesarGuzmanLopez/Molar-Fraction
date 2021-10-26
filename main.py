@@ -34,13 +34,13 @@ class GraficaApp:
         self.label32 = tk.Label(self.frame7)
         self.label32.configure(relief='flat', text='Number of Acido Base Equilibria')
         self.label32.place(height='20', relheight='0.0', relwidth='0.0', relx='0.0', rely='0.0', width='200', y='60')
-        self.menubutton10 = tk.Menubutton(self.frame7)
-        self.menubutton10.configure(text='pH values')
-        self.menubutton10.place(anchor='nw', x='60', y='310')
+        self.label5 = tk.Label(self.frame7)
+        self.label5.configure(text='pH values')
+        self.label5.place(anchor='nw', x='60', y='310')
         self.__tkvar = tk.StringVar(value='')
         __values = ['One pH value', 'pH Range']
-        self.optionmenu4 = tk.OptionMenu(self.frame7, self.__tkvar, 'One pH value', *__values, command=None)
-        self.optionmenu4.place(anchor='nw', bordermode='inside', x='130', y='305')
+        self.optionmenu4 = tk.OptionMenu(self.frame7, self.__tkvar, None, *__values, command=None)
+        self.optionmenu4.place(anchor='nw', bordermode='inside', x='147', y='305')
         self.label40 = tk.Label(self.frame7)
         self.label40.configure(compound='top', justify='left', text='Single pH Value')
         self.label40.place(anchor='nw', x='50', y='350')
@@ -117,7 +117,7 @@ class GraficaApp:
         self.tkinterscrolledtext3.place(anchor='nw', height='480', x='0', y='0')
         self.frame10.configure(borderwidth='1', height='480', relief='ridge', width='345')
         self.frame10.place(anchor='nw', x='350', y='0')
-        __valuesa = ['1 pKa', '2 pKa']
+        __valuesa = ['1 pKa', '2 pKa','3 pKa', '4 pKa','5 pKa', '6 pKa',]
         self.__tkvar2 = tk.StringVar()
         self.optionmenu1 = tk.OptionMenu(self.frame7, self.__tkvar2, None, *__valuesa, command=None)
         self.optionmenu1.place(anchor='nw', bordermode='inside', x='200', y='58')
