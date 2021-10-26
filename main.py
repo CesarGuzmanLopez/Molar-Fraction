@@ -6,6 +6,7 @@ from tkinter.scrolledtext import ScrolledText
 
 
 
+
 class GraficaApp:
     def __init__(self, master=None):
         # build ui
